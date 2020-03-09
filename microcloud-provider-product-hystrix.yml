@@ -6,9 +6,13 @@ spring:
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource # 配置当前要使用的数据源的操作类型
-    driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类#  security:#    user:#      name: admin
+    driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类
+#  security:
+#    user:
+#      name: admin
 #      password: 123456
-#      roles:#      - USER
+#      roles:
+#      - USER
 server:
   port: 8080
 mybatis:
@@ -19,15 +23,19 @@ logging:
   level:
     com.zw.mapper: debug
     
-eureka:  client:
+eureka:
+  client:
 #    fetch-registry: false
-#    register-with-eureka: false    service-url:      defaultZone: http://admin:eureka@eureka1:7001/eureka #,http://admin:123456@eureka2:7002/eureka,http://admin:123456@eureka3:7003/eureka
-  instance:    instance-id: microcloud-provider-product-instance1
+#    register-with-eureka: false
+    service-url:
+      defaultZone: http://admin:eureka@eureka1:7001/eureka #,http://admin:123456@eureka2:7002/eureka,http://admin:123456@eureka3:7003/eureka
+  instance:
+    instance-id: microcloud-provider-product-instance1
     prefer-ip-address: true
     
 info:
   app.name: microcloud-provider-product
-  compane.name: com
+  compane.name: company.zw
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
   build.parent: $project.parent.artifactId$
