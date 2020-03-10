@@ -41,7 +41,7 @@ eureka:
   
     
 info:
-  app.name: microcloud-provider-product-zzzz
+  app.name: microcloud-provider-product-XXXX
   compane.name: company.zw
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
