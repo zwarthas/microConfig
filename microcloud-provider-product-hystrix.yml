@@ -34,7 +34,7 @@ eureka:
     prefer-ip-address: true
     
 info:
-  app.name: microcloud-provider-product
+  app.name: microcloud-provider-product-xxx
   compane.name: company.zw
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
